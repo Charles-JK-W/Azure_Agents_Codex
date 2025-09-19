@@ -1,0 +1,19 @@
+{
+  "name": "azure-agents-codex",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=18.20"
+  },
+  "scripts": {
+    "dev": "pnpm -r --parallel --workspace-root=false run dev",
+    "dev:server": "pnpm --filter server run dev",
+    "dev:web": "pnpm --filter web run dev",
+    "build": "pnpm -r --workspace-root=false run build",
+    "lint": "pnpm -r --workspace-root=false run lint",
+    "test": "pnpm -r --workspace-root=false run test",
+    "typecheck": "pnpm -r --workspace-root=false run typecheck",
+    "format": "pnpm -r --workspace-root=false run format"
+  }
+}
