@@ -35,18 +35,6 @@ if (!azureClient) {
   );
 }
 
-app.get("/", (_req, res) => {
-  res.json({
-    name: "Azure AI Foundry chat relay",
-    status: "ok",
-    azureConfigured: Boolean(azureClient),
-    endpoints: {
-      health: "/healthz",
-      chat: "/api/chat",
-    },
-  });
-});
-
 app.get("/healthz", (_req, res) => {
   res.json({ status: "ok", azureConfigured: Boolean(azureClient) });
 });

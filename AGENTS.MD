@@ -20,7 +20,6 @@
 
 ### Backend (`packages/server`)
 - Express server exposing `POST /api/chat` and `GET /healthz`.
-- Express server exposing `GET /` (service metadata), `GET /healthz`, and `POST /api/chat`.
 - Uses `@azure/identity` for OAuth and Azure AI Foundry REST endpoints for threads/messages/runs.
 - Validates payloads with `zod`.
 - Requires Azure client credentials; otherwise responds with `503`.
